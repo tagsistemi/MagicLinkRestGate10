@@ -1,0 +1,10 @@
+{
+  "authenticationToken": "531dadd9-f291-48a8-9108-4b97e7738de0",
+  "binaryContent": "file convertito in stringa base 64",
+  "sourceFileName": "test.pdf",
+  "description": "prova easy attachments",
+  "documentNamespace": "Document.ERP.Sales.Documents.Invoice",
+  "documentKey": "SaleDocId:206;",
+  "attachmentID": "0",
+  "result": ""
+}

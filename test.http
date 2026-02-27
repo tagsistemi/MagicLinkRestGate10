@@ -1,0 +1,27 @@
+//login
+//restituisce un token da utilizzare per le successive chiamate
+//il token è valido per 20 minuti
+//b51ab164-f49f-442d-b7b0-07c6d237aa37
+POST https://localhost:5001/api/MagicLinkSoap/LoginSoap?user=sa&passw=Gieffex3035&companyname=AzDemo&process=test
+
+
+
+
+//allegare
+POST https://localhost:5001/api/MagicLinkSoap/TBDMSAttachBinaryContentInDocument
+Content-Type: application/json
+
+{
+  "authenticationToken": "531dadd9-f291-48a8-9108-4b97e7738de0",
+  "binaryContent": "file convertito in stringa base 64",
+  "sourceFileName": "test.pdf",
+  "description": "prova easy attachments",
+  "documentNamespace": "Document.ERP.Sales.Documents.Invoice",
+  "documentKey": "SaleDocId:206;",
+  "attachmentID": "0",
+  "result": ""
+}
+
+
+//logoff dopo ogni operazione di post
+POST https://localhost:5001/api/MagicLinkSoap/LogOffSoap?token=b51ab164-f49f-442d-b7b0-07c6d237aa37
